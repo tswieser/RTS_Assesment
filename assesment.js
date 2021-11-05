@@ -18,9 +18,6 @@
 // Let us know if you have any questions! If you're good to go, please send us back your exercise at your convenience (please upload your response to a public git repository, such as Github).
 
 class Transform {
-    constructor() {
-        this.storage = []
-    }
 
     BinarySearch(numArr, int) {
         if (numArr.length === 0) return -1
@@ -63,7 +60,6 @@ class Transform {
         if (num > str.length) {
             return `Enter a number less than ${str.length}`
         }
-
         let strArr = str.split('')
         let res = new Array()
 
@@ -92,4 +88,3 @@ console.log(obj.stringRotation("MyString", 5))
 console.log(obj.stringRotation("MyString", 6))
 console.log(obj.stringRotation("MyString", 7))
 console.log(obj.stringRotation("MyString", 30))
-
