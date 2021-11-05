@@ -19,34 +19,9 @@
 
 class Transform {
 
-    BinarySearch(numArr, int) {
-        if (numArr.length === 0) return -1
-
-        let middleNum = Math.floor(numArr.length / 2)
-        let midEl = numArr[middleNum]
-
-        let leftHalf = numArr.slice(0, middleNum)
-        let rightHalf = numArr.slice(middleNum + 1)
-
-        if (int < midEl) {
-            return this.BinarySearch(leftHalf, int)
-        } else if (int > midEl) {
-            let res = this.BinarySearch(rightHalf, int)
-            if (res === -1) {
-                return -1
-            } else {
-                return res + middleNum + 1
-            }
-        } else {
-            return middleNum
-        }
-    }
-
     aboveBelow(numArr, int) {
         let res = new Object();
-        // numArr.sort((a, b) => a - b)
-        // let indx = numArr.indexOf(int)
-        let indx = this.BinarySearch(numArr, int)
+        let indx = numArr.indexOf(int)
         if (indx === -1) {
             return "Integer not found"
         } else {
@@ -74,17 +49,17 @@ class Transform {
 }
 
 const obj = new Transform()
-
-console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], 3))
-console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], 1))
-console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], 6))
-console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], -1))
-console.log(obj.stringRotation("MyString", 0))
-console.log(obj.stringRotation("MyString", 1))
-console.log(obj.stringRotation("MyString", 2))
-console.log(obj.stringRotation("MyString", 3))
-console.log(obj.stringRotation("MyString", 4))
-console.log(obj.stringRotation("MyString", 5))
-console.log(obj.stringRotation("MyString", 6))
-console.log(obj.stringRotation("MyString", 7))
-console.log(obj.stringRotation("MyString", 30))
+// console.log(obj.aboveBelow([3, 1, 4, 8, 2, 9], 3))
+// console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], 3))
+// console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], 1))
+// console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], 6))
+// console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], -1))
+// console.log(obj.stringRotation("MyString", 0))
+// console.log(obj.stringRotation("MyString", 1))
+// console.log(obj.stringRotation("MyString", 2))
+// console.log(obj.stringRotation("MyString", 3))
+// console.log(obj.stringRotation("MyString", 4))
+// console.log(obj.stringRotation("MyString", 5))
+// console.log(obj.stringRotation("MyString", 6))
+// console.log(obj.stringRotation("MyString", 7))
+// console.log(obj.stringRotation("MyString", 30))
