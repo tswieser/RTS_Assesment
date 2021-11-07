@@ -49,17 +49,6 @@ class Transform {
 }
 
 const obj = new Transform()
-// console.log(obj.aboveBelow([3, 1, 4, 8, 2, 9], 3))
-// console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], 3))
-// console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], 1))
-// console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], 6))
-// console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], -1))
-// console.log(obj.stringRotation("MyString", 0))
-// console.log(obj.stringRotation("MyString", 1))
-// console.log(obj.stringRotation("MyString", 2))
-// console.log(obj.stringRotation("MyString", 3))
-// console.log(obj.stringRotation("MyString", 4))
-// console.log(obj.stringRotation("MyString", 5))
-// console.log(obj.stringRotation("MyString", 6))
-// console.log(obj.stringRotation("MyString", 7))
-// console.log(obj.stringRotation("MyString", 30))
+
+console.log(obj.aboveBelow([1, 2, 3, 4, 5, 6], 3))
+console.log(obj.stringRotation("MyString", 2))

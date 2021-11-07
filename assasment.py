@@ -30,15 +30,6 @@ class Transform:
 
 
 new_dict = Transform()
-# print(new_dict.above_below([1, 2, 3, 4, 5, 6], 3))
-# print(new_dict.above_below([1, 2, 3, 4, 5, 6], 1))
-# print(new_dict.above_below([1, 2, 3, 4, 5, 6], 6))
-# print(new_dict.above_below([1, 2, 3, 4, 5, 6], -1))
-# print(new_dict.string_rotation("MyString", 0))
-# print(new_dict.string_rotation("MyString", 1))
-# print(new_dict.string_rotation("MyString", 2))
-# print(new_dict.string_rotation("MyString", 3))
-# print(new_dict.string_rotation("MyString", 4))
-# print(new_dict.string_rotation("MyString", 5))
-# print(new_dict.string_rotation("MyString", 6))
-# print(new_dict.string_rotation("MyString", 30))
+
+print(new_dict.above_below([1, 2, 3, 4, 5, 6], 3))
+print(new_dict.string_rotation("MyString", 2))
